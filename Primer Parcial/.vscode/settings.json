@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "algorithm": "c",
+        "limits": "c",
+        "passwordchecker.h": "c",
+        "queue": "c",
+        "stack": "c"
+    }
+}
