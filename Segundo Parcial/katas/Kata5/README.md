@@ -36,15 +36,30 @@ The program receives a sentence throught the terminal.
 
 After you finish writing the words you want to take in consideration for the Infographic, press ctrl + D to proccess the data.
 
+### Logic
+
+First of all we need to create an stream input for the user to enter all the words he wants to take in consideration for the infographic, it doesn't matter if it has lower or uppercase letter (even especial symbols);
+
+Next we start reading char by char the stream, looking that the char read is alphanumeric, so with each alphanumeric char we will start adding it (also converting it into lower case if needed) in each char on one array we have, and stop doing that when we see something different (hence the space between word and word).
+
+Now that we have this word, we can work with it and hash its value. If the value returned when looking at our hash table is null, it means that the word introduced is new, so we add it to the hash table and register the realvalue as 1. In the case the returned value was a number, we just modify that value + 1, which means the word was allready there n times before.
+
+When we find that a r
+
+### Complexity
+Since our program only needs to iterate through each character wants and make the hashable process with it, we can say we have a complexity of O(n).
+
 ### Installing
 
+//First we need to generate the compiled hash and main files
 g++ -c hash.c
 g++ -c main.c
+
+//Now we generate an exe by combining both compile files and are ready to go
 g++ -o hashmain.exe hash.o main.o
 ./hashmain.exe
 //Text you want to input
 ctrl + D --> Infographic
-
 
 ## Contributing
 
