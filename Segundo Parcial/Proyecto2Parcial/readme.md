@@ -27,15 +27,15 @@ Limits
 
 Input  
 4
-4 11111
-1 09
 5 110011
+1 09
+4 11111
 0 1
 
 Output
-Case #1: 0
+Case #1: 2
 Case #2: 1
-Case #3: 2
+Case #3: 0
 Case #4: 0
 
 In Case #1, the audience will eventually produce a standing ovation on its own, without you needing to add anyone -- first the audience member with Si = 0 will stand up, then the audience member with Si = 1 will stand up, etc.
