@@ -40,7 +40,7 @@ int main()
                 acumulador += temp;
                 invitados += temp;
             }
-            nivel++;
+            nivel+=1;
             acumulador += (int)testCase[j] - 48;
         }
 
